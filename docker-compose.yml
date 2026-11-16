@@ -1,0 +1,36 @@
+
+services:
+  ubuntu1:
+    build: ./ubuntu
+    container_name: ubuntu1
+    ports:
+      - "2221:22"
+    restart: unless-stopped
+
+  ubuntu2:
+    build: ./ubuntu
+    container_name: ubuntu2
+    ports:
+      - "2232:22"
+    restart: unless-stopped
+
+  ubuntu3:
+    build: ./ubuntu
+    container_name: ubuntu3
+    ports:
+      - "2223:22"
+    restart: unless-stopped
+
+  ubuntu4:
+    build: ./ubuntu
+    container_name: ubuntu4
+    ports:
+      - "2224:22"
+    restart: unless-stopped
+
+  ubuntu5:
+    build: ./ubuntu
+    container_name: ubuntu5
+    ports:
+      - "2225:22"
+    restart: unless-stopped
